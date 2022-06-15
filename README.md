@@ -1,6 +1,6 @@
-# コーポレートサイト（Gatsby + Contentful）
+
 「はじめてつくるJamstackサイト with ヘッドレスCMS」
 
-第5章完了時点のソースコードです。
+↑を見て作ったGatsbyのサイトwithContentful
 
-サイトを起動するには、ファイルをダウンロード後にターミナルで`npm install`を実行してnpmパッケージをダウンロードする必要があります。また`gatsby-config.js`にあるContentfulプラグインの`spaceId`と`accessToken`を、自身のアカウントのものに変更してください。
+CMSについてはmicroCMSにするか使用感を使いながら考える予定。
