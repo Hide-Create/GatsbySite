@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as style from "../styles/singleBlog.module.scss"
@@ -10,7 +10,7 @@ const SingleBlog = (props) => {
         <Layout>
             <Seo title={props.data.contentfulBlog.title} description={props.data.contentfulBlog.excerpt} />
             <div className={style.hero}>
-                <StaticImage src="../images/company.jpg" alt="profile" quality={90} placeholder="blurred" formats={["AUTO", "WEBP", "AVIF"]} />
+                <GatsbyImage image={props.data.contentfulBlog.image.gatsbyImageData} alt="blog-image" />
             </div>
             <div className={style.wrapper}>
                 <div className={style.container}>

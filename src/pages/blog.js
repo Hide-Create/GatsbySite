@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as style from "../styles/blog.module.scss"
@@ -21,7 +21,7 @@ const Blog = (props) => {
                 <p>{singleBlog.node.date}</p>
                 <Link to={singleBlog.node.slug}>Read More</Link>
               </div>
-              <StaticImage src="../images/company.jpg" alt="profile" quality={90} placeholder="blurred" formats={["AUTO", "WEBP", "AVIF"]} />
+              <GatsbyImage image={singleBlog.node.image.gatsbyImageData} alt="card-image" className={style.cardImg} />
             </div>
           )
           )}
